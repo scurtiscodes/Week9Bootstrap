@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/addons/init.js"></script>
+    <style>
+        body {
+            background-image: url(https://cdn.pixabay.com/photo/2014/05/27/23/32/matrix-356024_1280.jpg);
+        }
+    </style>
+
+    <!-- 
+        At least 2 pages.
+        A Bootstrap navbar, table, and form.
+        Bootstrap grid used throughout to format elements
+            -Elements should stack vertically when the window is small
+            -Add star ratings if time permits
+            -Move Join Form to own page
+
+        Site Concept: get into/out of situation using existing resources professionals, 80-90s cyberpunk asthetics
+        
+ -->
+</head>
+
+<body class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" >
+        <a class="navbar-brand" href="home.html">Bootstrap's Bootstraps</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="toggle navigation"> 
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Cannot get it to display 'Home' and 'Form' page options -->
+                
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="form.html">Form</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="border border-light bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam magni soluta consequatur possimus quaerat. Expedita officia tempora velit odio, placeat molestiae, magni iste id beatae voluptatem fugiat, iure at minus quasi commodi dicta in fuga delectus architecto aperiam rerum corporis quis quas aliquid. Fuga nobis assumenda eos atque, blanditiis dolorem aliquam asperiores, sequi consequatur voluptates eveniet suscipit quibusdam. Accusantium eaque earum nulla nemo inventore?</p>
+                    <div class="col-sm">
+        <p>Fugit laborum reprehenderit eos nulla dolores placeat animi, aliquam sunt amet neque aliquid porro nostrum non voluptatem recusandae deleniti fuga pariatur voluptas quod debitis libero ducimus ad excepturi. Maiores ducimus sed earum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <!-- use https://mdbootstrap.com/docs/b4/jquery/plugins/rating/ to model rating system?
+        Not implemented as of 10/1/2022 -->
+        <div class="container">
+            <span id="rateMe1"></span>
+          </div>
+    <table class="table table-dark table-hover text-center">
+        <tbody>
+            <tr>
+                <th>Operative</th>
+                <th>Skill</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <!-- data for Op1 -->
+                <td>ZZ7</td>
+                <td>Covert database infiltration</td>
+                <td>5/5</td>
+            </tr>
+            <tr>
+                <!-- data for Op2 -->
+                <td>Polymorphic</td>
+                <td>AI Intergration and Rehab</td>
+                <td>4/5</td>
+            </tr>
+            <tr>
+                <!-- data for Op3 -->
+                <td>Sapper</td>
+                <td>Security, Anti-security</td>
+                <td>3/5</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    
+</body>
+</html>
